@@ -1,5 +1,6 @@
 package app.doggy.janken
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -88,6 +89,21 @@ class MainActivity : AppCompatActivity() {
                             resultTextView.text = "あいこ！"
                         }
                     }
+                }
+            }
+
+            //勝敗に応じて、resultTextViewの文字色を変更。
+            when(resultTextView.text) {
+                "あなたの勝ち！" -> {
+                    resultTextView.setTextColor(Color.parseColor("#0000dd"))
+                }
+
+                "CPUの勝ち！" -> {
+                    resultTextView.setTextColor(Color.parseColor("#dd0000"))
+                }
+
+                "あいこ！" -> {
+                    resultTextView.setTextColor(Color.parseColor("#00dd00"))
                 }
             }
         }
