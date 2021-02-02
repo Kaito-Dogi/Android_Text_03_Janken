@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Janken</string>
+    <string name="app_name">ジャンケン</string>
     <string name="goo">グー</string>
     <string name="choki">チョキ</string>
     <string name="pa">パー</string>
